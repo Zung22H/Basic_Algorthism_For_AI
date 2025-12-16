@@ -17,7 +17,7 @@ def get_actions(state):
 
     # Move
     if height == "floor":
-        for pos in ["center","window", "middle"]:
+        for pos in ["window", "middle", "center"]:
             if pos != monkey_pos:
                 actions.append(("Move to " + pos, (pos, box_pos, height)))
 
